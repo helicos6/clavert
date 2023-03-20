@@ -27,17 +27,17 @@
       compatible = "zmk,keymap";
         default_layer {
 // -----------------------------------------------------------------------------------------------------------------------------------------
-// | GRAVE      | 1     | 2    | 3    | 4   | 5   |                                                  | 6   | 7   | 8   | 9   | 0   | -     |
-// | TAB        | Q     | W    | F    | P   | B   | ESC      |                            | ESC      | J   | L   | U   | Y   | ;   | =     |
-// | LCTRL      | A     | R    | S    | T   | G   | LS(LALT) |                            | \        | M   | N   | E   | I   | O   | '     |
-// | LSHFT      | Z     | X    | C    | D   | V   | LtFN DEL | HOME      |  | PG_UP       | LtFN F12 | K   | H   | ,   | .   | /   | RSHFT |
-// | LtNUM LEFT | RIGHT | LALT | LGUI | SPACE     | BSPC     | LtNAV END |  | LtNAV PG_DN | DEL      | ENTER     | [   | ]   | UP  | DOWN  |
+// | GRAVE      | 1     | 2    | 3    | 4   | 5   |                                                  | 6   | 7   | 8   | 9   | 0   | =     |
+// | TAB        | Q     | W    | F    | P   | B   | ESC      |                            | ESC      | J   | L   | U   | Y   | ;   | -     |
+// | CAPS      | A     | R    | S    | T   | G   | END |                            | \        | M   | N   | E   | I   | O   | '     |
+// | LSHFT      | Z     | X    | C    | D   | V   | LCTRL | LALT      |  | RALT       | LtFN F12 | K   | H   | ,   | .   | /   | RSHFT |
+// | LtNUM LEFT | RIGHT | LALT | LGUI | DEL     | BSPC     | LGUI |  | RGUI | SPACE    | ENTER     | [   | ]   | UP  | DOWN  |
           bindings = <
-    &kp GRAVE    &kp N1    &kp N2    &kp N3    &kp N4    &kp N5                                                      &kp N6   &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
-    &kp TAB      &kp Q     &kp W     &kp F     &kp P     &kp B  &kp ESC                                   &kp ESC    &kp J    &kp L  &kp U     &kp Y    &kp SEMI &kp EQUAL
-    &kp LCTRL    &kp A     &kp R     &kp S     &kp T     &kp G  &kp LS(LALT)                              &kp BSLH   &kp M    &kp N  &kp E     &kp I    &kp O    &kp SQT
-    &kp LSHFT    &kp Z     &kp X     &kp C     &kp D     &kp V  &lt FN DEL   &kp HOME       &kp PG_UP     &lt FN F12 &kp K    &kp H  &kp COMMA &kp DOT  &kp FSLH &sk RSHFT
-    &lt NUM LEFT &kp RIGHT &kp LALT  &kp LGUI  &kp SPACE        &kp BSPC     &lt NAV END    &lt NAV PG_DN &kp DEL    &kp ENTER       &kp LBKT  &kp RBKT &kp UP   &kp DOWN
+    &kp GRAVE    &kp N1    &kp N2    &kp N3    &kp N4    &kp N5                                                      &kp N6   &kp N7 &kp N8    &kp N9   &kp N0   &kp EQUAL
+    &kp TAB      &kp Q     &kp W     &kp F     &kp P     &kp B  &kp ESC                                   &kp ESC    &kp J    &kp L  &kp U     &kp Y    &kp SEMI &kp MINUS
+    &kp CAPS    &kp A     &kp R     &kp S     &kp T     &kp G  &kp END                              &kp BSLH   &kp M    &kp N  &kp E     &kp I    &kp O    &kp SQT
+    &kp LSHFT    &kp Z     &kp X     &kp C     &kp D     &kp V  &lt LCTRL   &kp LALT       &kp RALT     &lt FN F12 &kp K    &kp H  &kp COMMA &kp DOT  &kp FSLH &sk RSHFT
+    &lt NUM LEFT &kp RIGHT &kp LALT  &kp LGUI  &kp DEL        &kp BSPC     &lt LGUI    &lt RGUI &kp SPACE    &kp ENTER       &kp LBKT  &kp RBKT &kp UP   &kp DOWN
           >;
 
           sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
