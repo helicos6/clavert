@@ -31,13 +31,13 @@
 // | TAB        | Q     | W    | F    | P   | B   | ESC      |                            | ESC      | J   | L   | U   | Y   | ;   | -     |
 // | CAPS      | A     | R    | S    | T   | G   | END |                            | \        | M   | N   | E   | I   | O   | '     |
 // | LSHFT      | Z     | X    | C    | D   | V   | LtFN F12 | LALT      |  | RALT       | LtFN F12 | K   | H   | ,   | .   | /   | RSHFT |
-// | LEFT | RIGHT | LALT | LGUI | DEL     | BSPC     | LGUI |  | RGUI | SPACE    | ENTER     | [   | ]   | UP  | DOWN  |
+// | LEFT | RIGHT | LPAR | RPAR | DEL     | BSPC     | LGUI |  | RGUI | SPACE    | ENTER     | [   | ]   | UP  | DOWN  |
           bindings = <
     &kp GRAVE    &kp N1    &kp N2    &kp N3    &kp N4    &kp N5                                                      &kp N6   &kp N7 &kp N8    &kp N9   &kp N0   &kp EQUAL
     &kp TAB      &kp Q     &kp W     &kp F     &kp P     &kp B  &kp ESC                                   &kp ESC    &kp J    &kp L  &kp U     &kp Y    &kp SEMI &kp MINUS
     &kp CAPS    &kp A     &kp R     &kp S     &kp T     &kp G  &kp END                              &kp BSLH   &kp M    &kp N  &kp E     &kp I    &kp O    &kp SQT
     &kp LSHFT    &kp Z     &kp X     &kp C     &kp D     &kp V  &lt FN F12   &kp LALT       &kp RALT     &lt FN F12 &kp K    &kp H  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-    &kp LEFT &kp RIGHT &kp LCTRL  &kp LGUI  &kp DEL        &kp BSPC     &kp LGUI    &kp RGUI &kp SPACE    &kp ENTER       &kp LBKT  &kp RBKT &kp UP   &kp DOWN
+    &kp LEFT &kp RIGHT &kp LPAR  &kp RPAR  &kp DEL        &kp BSPC     &kp LGUI    &kp RGUI &kp SPACE    &kp ENTER       &kp LBKT  &kp RBKT &kp UP   &kp DOWN
           >;
 
           sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
